@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    /* ı split the web page into header , main,nav and footer. This is header section
+    ı set header's height , witdh and colors in the header section */
+    header{
+        height: 150px; 
+        width: 100%;
+        background-color: rgb(9, 45, 99);
+        display: flex;
+        align-items: center;
+        
+        
+        
+        /* ı gave a name  to my  web page   */
+    }
+    .bankName{
+        padding-left: 300px;
+        font-size: xx-large;
+        color: #F0EBCE;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+     /* I upload a image for my web page's image */
+    .bankImage{
+        padding-left: 100px;
+        float: left;
+    }
+    /* ı gave an sloagn for my bank */   
+    .slogan{
+        text-align: center;
+        padding-left: 90px;
+        font-size: medium;
+        color: rgb(229, 238, 199);
+        
+    }
+    /* I set the slogan part of the web page .I split it using flex*/
+    section{
+        
+        flex:8;
+        
+    }
+
+    /* this section is the part  where you can see color and size on left side of my page  */
+    nav{
+        background-color:#ccc8c8;
+       flex: 2;
+       border: 2px solid rgb(9, 45, 99);
+       
+    }
+    /* This section is side left section of my web page where you can see currencies and their values
+    ı set the box of the nav section where you can see the color , size of the box */
+    .aside_left div{
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 80%;
+        height: 15%;
+        margin-top: 9px;
+        margin-left: 15px;
+        
+        
+    }
+
+    /* I set the inside of the box where we can see style or size  */
+    .aside_left li{
+        
+        padding: 20px;
+        list-style-type: none;
+        
+    }
+    /* I am locating the picture and value of money here because I want both to be side by side. */
+    .aside_left_money{
+        
+        float: left;
+       
+        
+    } 
+    /* This section is the part where you can see currencies and their values on right side of my web page
+    ı set the box of the nav section where you can see the color , size of the box */
+  
+    .aside_right_box{
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        
+    }
+     /* I set the inside of the box where we can see style or size  */
+    .aside_right li{
+       
+       padding: 30px;
+       list-style-type: none;
+      
+       
+   }
+    /* This section is main section of my web page where yo can  see your account details    main{ */
+
+    main{
+        display: flex;
+        height: 100vh;
+        
+    }
+    /* ı set the properties of main section in web page. for example color , size */
+    .mainBar{
+        background-color:#ccc8c8;
+        border: 1px solid ;     
+        font-size:19px;
+        flex: 14;
+        
+    }
+    
+    /* I set the properties of the welcome to the bank text */
+    .title{
+        background-color:#ccc8c8;
+        border: 1px solid rgb(9, 45, 99);
+
+    }
+    /* this section is the last part of my web page . ı gave color and size of footer section*/
+    footer{
+        background-color: rgb(13, 58, 124);
+        height: 150px; 
+        border: 1px solid black;
+        display: flex;
+       
+    }
+    /* i did it using table and average the table */
+    .footer_table{
+
+        margin: auto;
+       
+    }
+    
+    /* setting their positions */
+    .footerBar{
+        margin: auto;
+        text-align: center;
+        flex:5;
+    }
+
+    /* ı set  the inside of box where you can see color , size and space of box */
+    td{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 25px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+       
+        
+        
+        
+    }
+
+    
+   </style>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="image/company.svg" height="150px" width="150px" class="bankImage">
+            <p class="bankName">CHEAP <br> CURRENCY</p>
+        </section>
+        <section>
+            <p class="slogan"><strong>Smart Banking for the Good Life</strong> </p>
+        </section>
+    </header>
+    <main>
+
+        <nav class="aside_left">
+            <div><li><img src="image/dolar.svg" width="80px" height="50px" class="aside_left_money"> <p>18.59</p></li></div>
+            <div><li><img src="image/euro.svg" width="80px" height="50px" class="aside_left_money"> <p>18.54</p></li></div>
+            <div><li><img src="image/won.svg" width="80px" height="50px" class="aside_left_money"> <p>0.03</p></li></div>
+            <div><li><img src="image/bitcoin.svg" width="80px" height="50px" class="aside_left_money"> <p>384.338</p></li></div>
+            <div><li><img src="image/sterlin.svg" width="80px" height="50px" class="aside_left_money"> <p>21.59</p></li></div>
+            <div><li><img src="image/gold.svg" width="80px" height="50px" class="aside_left_money"> <p>938.06</p></li></div>
+            
+        </nav>
+        <section style=" background-color:#ccc8c8">
+            <div class="title" ><h1 style="text-align:center; color: rgb(9, 45, 99) ;">WELCOME YOUR BANK </h1>  <br></div>
+            <div class="mainBar" ;> <div class="mainBar" style="border:2px solid black; margin-right: 100px ; padding: 60px;" ><h3 style="color: rgb(9, 45, 99);">ACCOUNTS - CARDS <hr> </h3><h4>476-663725/MAAŞ-DES</h4><p>Your available balance</p> <h1>159.978,99</h1>
+                <a href="www.google.com" style="color: rgb(9, 45, 99);">Go to account detail</a> </div> </div>
+                
+                    <div class="mainBarLeft" style="padding-left: 40px;"><h3 style="color:rgb(9, 45, 99);">Recent Transactions</h3> <li>29/10/2022 / Food :  -78,78 BIM AŞ markets</li> <li>29/10/2022 / Clothes :  -150,60  Zara Outlet </li>
+                    <li>27/10/2022 / Food :  -95,45 Brewmood cafe </li> <li>24/10/2022 / Food :  -78,78 BIM AŞ markets</li><a href="www.google.com" style="color: rgb(9, 45, 99);"><br> Go to account transactions ></a> </div>
+                    
+                </div>
+        </section>
+        <nav class="aside_right">
+            
+                <div><li><img src="image/person.svg" width="40px" height="40px" ><div class="aside_right_box"><p>Hilal Ak</p> <strong style="color: rgb(9, 45, 99);">Exit </strong><br> </div></li></div>
+                <div><li><img src="image/wallet.svg" width="40px" height="40px" ><div class="aside_right_box"><p>159.978.99 TL</p></div></li></div>
+                <div><li><h3>Account Transactions</h3><div class="aside_right_box"> <p>Food : -78,78 <br> Clothes: -150,60</p></div> </li></div>
+                
+            
+        </nav>
+
+    </main>
+    
+    <footer>
+        <div ></div>
+        <div class="footerBar">
+            <table  class="footer_table" cellspacing="5" >                <td><p style="padding-bottom: 5px;"> <img src="image/instagram.svg" width="30px" height="30px" >
+                    <img src="image/twitter.svg" width="30px" height="30px" >
+                    <img src="image/facebook.svg" width="30px" height="30px"></td>
+                    <td> <img src="image/mail.svg" width="30px" height="30px" style="float:left ; "><a style="padding-left: 5px;">cheapcurrency@gmail.com </a> <br> <br>
+                     <img src="image/tel.svg" width="30px" height="30px" style="float:left ; ">0554 987 5657</td>
+                <td><img src="image/location.svg" width="40px" height="40px" ></td>
+                <td><img src="image/visa.svg" width="30px" height="30px">
+                    <img src="image/visaa.svg" width="30px" height="30px">
+                    <img src="image/circle.svg" width="30px" height="30px">
+                    <img src="image/card.svg" width="30px" height="30px"></td>
+                    
+            </table>
+            @2023 CENG-BANK 
+        </div>
+        <div class="deneme"></div>
+        
+    </footer>
+</body>
+</html>
